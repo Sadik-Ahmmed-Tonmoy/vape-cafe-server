@@ -30,7 +30,7 @@ async function run() {
     const productCollection = client.db("vapeCafe").collection("vapeProducts");
 
 
-    // users details
+    // users details.
     app.post("/users", async (req, res) => {
       const user = req.body;
       const query = { email: user.email };
